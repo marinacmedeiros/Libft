@@ -1,7 +1,7 @@
 
 SRCS	= 
 
-OBJS	= ${SRCS: .c=.o}
+OBJS	= ${SRCS:.c=.o}
 
 NAME	= 
 

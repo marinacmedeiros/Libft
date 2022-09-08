@@ -6,7 +6,7 @@
 /*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 20:46:44 by coder             #+#    #+#             */
-/*   Updated: 2022/09/08 14:56:32 by coder            ###   ########.fr       */
+/*   Updated: 2022/09/08 19:11:46 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,16 +22,16 @@ int	ft_isalnum(int i)
 
 int	main(void)
 {
-	int	a, b, c, d, f, g, h;
+	int	a, b, c, d, e, f, g, h;
 	
 	a = '7';
 	b = '3';
 	c = 'X';
 	d = 'z';
-	//e = 'ç';
+	e = '-8';
 	f = '*';
-	g = '54';
-	h = '-871';
+	g = '-544';
+	h = -871;
 	
 	printf("%d\n", ft_isalnum(a));
 	printf("%d\n", ft_isalnum(b));
