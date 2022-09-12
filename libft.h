@@ -6,7 +6,7 @@
 /*   By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 18:24:55 by mamedeir          #+#    #+#             */
-/*   Updated: 2022/09/12 18:24:57 by mamedeir         ###   ########.fr       */
+/*   Updated: 2022/09/12 19:21:49 by mamedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,9 @@
 
 # include <unistd.h>
 # include <stdlib.h>
-# include <stdio.h>
+# include <stdint.h> //calloc
+# include <stdio.h> //printf - RETIRAR
+#include <string.h>// p/ testes de string - RETIRAR
 
 int		ft_isalpha(int c);
 int		ft_isalnum(int c);
