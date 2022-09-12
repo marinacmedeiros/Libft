@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
+/*   By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/12 15:46:21 by coder             #+#    #+#             */
-/*   Updated: 2022/09/12 16:21:47 by coder            ###   ########.fr       */
+/*   Created: 2022/09/12 18:29:35 by mamedeir          #+#    #+#             */
+/*   Updated: 2022/09/12 18:29:39 by mamedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*#include "libft.h"*/
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
@@ -25,11 +25,11 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (s1[i] - s2[i]);
 }
 
-int main()
+/*int main()
 {
     char a[] = "Armstrong";
     char b[] = "Army";
 
     ft_strncmp(a, b, 4);
     return (0);
-}
+}*/

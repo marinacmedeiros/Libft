@@ -3,13 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
+/*   By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/12 16:16:29 by coder             #+#    #+#             */
-/*   Updated: 2022/09/12 16:16:54 by coder            ###   ########.fr       */
+/*   Created: 2022/09/12 18:27:16 by mamedeir          #+#    #+#             */
+/*   Updated: 2022/09/12 18:27:41 by mamedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t ft_strlcat(char *dst, const char *src, size_t size){
-	
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
+{
+
 }

@@ -3,13 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
+/*   By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/12 16:17:58 by coder             #+#    #+#             */
-/*   Updated: 2022/09/12 16:18:13 by coder            ###   ########.fr       */
+/*   Created: 2022/09/12 18:26:31 by mamedeir          #+#    #+#             */
+/*   Updated: 2022/09/12 18:26:41 by mamedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strrchr(const char *s, int c){
-	
+char	*ft_strrchr(const char *s, int c)
+{
+
 }

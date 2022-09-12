@@ -3,13 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
+/*   By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/12 16:19:10 by coder             #+#    #+#             */
-/*   Updated: 2022/09/12 16:19:32 by coder            ###   ########.fr       */
+/*   Created: 2022/09/12 18:22:31 by mamedeir          #+#    #+#             */
+/*   Updated: 2022/09/12 18:23:21 by mamedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strnstr(const char *big, const char *little, size_t len){
-	
+char	*ft_strnstr(const char *big, const char *little, size_t len)
+{
+
 }
