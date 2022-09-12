@@ -1,25 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/10 17:30:00 by coder             #+#    #+#             */
-/*   Updated: 2022/09/12 15:41:15 by coder            ###   ########.fr       */
+/*   Created: 2022/09/12 16:19:10 by coder             #+#    #+#             */
+/*   Updated: 2022/09/12 16:19:32 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_putstr_fd(char *s, int fd)
-{
-	int	a;
-
-	a = 0;
-	while (s[a] != '\0')
-	{
-		write(fd, &s[a], 1);
-		a++;
-	}
+char *ft_strnstr(const char *big, const char *little, size_t len){
+	
 }

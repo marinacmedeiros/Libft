@@ -1,25 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/10 17:30:00 by coder             #+#    #+#             */
-/*   Updated: 2022/09/12 15:41:15 by coder            ###   ########.fr       */
+/*   Created: 2022/09/12 15:42:08 by coder             #+#    #+#             */
+/*   Updated: 2022/09/12 15:44:21 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_putstr_fd(char *s, int fd)
+size_t ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	int	a;
-
-	a = 0;
-	while (s[a] != '\0')
-	{
-		write(fd, &s[a], 1);
-		a++;
-	}
+	
 }

@@ -6,7 +6,7 @@
 /*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/10 16:27:49 by coder             #+#    #+#             */
-/*   Updated: 2022/09/10 16:59:23 by coder            ###   ########.fr       */
+/*   Updated: 2022/09/12 15:29:53 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdio.h>
 
 int		ft_isalpha(int c);
 int		ft_isalnum(int c);
