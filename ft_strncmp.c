@@ -6,11 +6,9 @@
 /*   By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 18:29:35 by mamedeir          #+#    #+#             */
-/*   Updated: 2022/09/14 16:12:19 by mamedeir         ###   ########.fr       */
+/*   Updated: 2022/09/15 13:04:14 by mamedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

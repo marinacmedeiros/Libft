@@ -6,9 +6,11 @@
 /*   By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 18:29:09 by mamedeir          #+#    #+#             */
-/*   Updated: 2022/09/12 18:29:13 by mamedeir         ###   ########.fr       */
+/*   Updated: 2022/09/15 13:22:30 by mamedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {

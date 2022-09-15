@@ -6,9 +6,11 @@
 /*   By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 18:22:31 by mamedeir          #+#    #+#             */
-/*   Updated: 2022/09/12 18:23:21 by mamedeir         ###   ########.fr       */
+/*   Updated: 2022/09/15 13:04:25 by mamedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//#include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
