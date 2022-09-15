@@ -6,13 +6,17 @@
 /*   By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 18:25:52 by mamedeir          #+#    #+#             */
-/*   Updated: 2022/09/15 13:03:33 by mamedeir         ###   ########.fr       */
+/*   Updated: 2022/09/15 16:00:21 by mamedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
-
+	while (*s != '\0' && c != *s)
+		s++;
+	if (c == *s)
+		return ((char *)s);
+	return (0);
 }
