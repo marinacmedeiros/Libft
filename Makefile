@@ -6,7 +6,7 @@
 #    By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/12 18:25:12 by mamedeir          #+#    #+#              #
-#    Updated: 2022/09/12 18:25:14 by mamedeir         ###   ########.fr        #
+#    Updated: 2022/09/16 14:49:23 by mamedeir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,3 @@ fclean:	clean
 	${RM} ${NAME}
 
 re:	fclean all
-
-.PHONY:	all clean fclean re
-

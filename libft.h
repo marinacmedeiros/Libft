@@ -6,7 +6,7 @@
 /*   By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 18:24:55 by mamedeir          #+#    #+#             */
-/*   Updated: 2022/09/15 16:25:56 by mamedeir         ###   ########.fr       */
+/*   Updated: 2022/09/16 15:30:56 by mamedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 # define LIBFT_H
 
 # include <unistd.h>
-# include <stdlib.h>
-# include <stdint.h> //calloc
+# include <stdlib.h> //AS DUAS ÚNICAS BIBLIOS QUE DEVEM SER ENTREGUES 
+# include <stdint.h> //calloc - RETIRAR
 # include <stdio.h> //printf - RETIRAR
 # include <string.h>// p/ testes de string - RETIRAR
 
