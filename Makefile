@@ -6,32 +6,29 @@
 #    By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/12 18:25:12 by mamedeir          #+#    #+#              #
-#    Updated: 2022/09/16 14:49:23 by mamedeir         ###   ########.fr        #
+#    Updated: 2022/09/20 17:07:13 by mamedeir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS	= 
+NAME	= libft.a
+
+SRCS	= ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_memcpy.c ft_memset.c ft_putchar_fd.c ft_putstr_fd.c ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_tolower.c ft_toupper.c
 
 OBJS	= ${SRCS:.c=.o}
 
-NAME	= 
-
-CC	= cc
-RM	= rm -f
 CFLAGS	= -Wall -Wextra -Werror
 
-.c.o:
-	${CC} ${CFLAGS} -c $< -o $< -o ${<:.c=.o}
-		
-${NAME}:	${OBJS}
-	${CC} -o ${NAME} ${OBJS}
-
 all:	${NAME}
+$(NAME): $(OBJ)
+	ar rc $(NAME) $(OBJ)
+
+$(OBJ): $(SRC)
+	cc $(CFLAGS) -c $(@:.o=.c)
 
 clean:
-	${RM} ${OBJS}
+	rm -f $(OBJS)
 
 fclean:	clean
-	${RM} ${NAME}
+	rm -f $(NAME)
 
 re:	fclean all
