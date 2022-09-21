@@ -6,7 +6,7 @@
 /*   By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 18:24:55 by mamedeir          #+#    #+#             */
-/*   Updated: 2022/09/20 22:44:46 by mamedeir         ###   ########.fr       */
+/*   Updated: 2022/09/21 20:28:33 by mamedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 # include <string.h>// p/ testes de string - RETIRAR
 
 void	ft_bzero(void *s, size_t n);
+void	*ft_calloc(size_t count, size_t size);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
