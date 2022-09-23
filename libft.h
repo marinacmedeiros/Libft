@@ -6,7 +6,7 @@
 /*   By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 18:24:55 by mamedeir          #+#    #+#             */
-/*   Updated: 2022/09/21 20:28:33 by mamedeir         ###   ########.fr       */
+/*   Updated: 2022/09/23 17:23:16 by mamedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <stdio.h> //printf - RETIRAR
 # include <string.h>// p/ testes de string - RETIRAR
 
+int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
 int		ft_isalnum(int c);
