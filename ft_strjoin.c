@@ -6,7 +6,7 @@
 /*   By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 15:39:32 by mamedeir          #+#    #+#             */
-/*   Updated: 2022/09/28 16:01:33 by mamedeir         ###   ########.fr       */
+/*   Updated: 2022/09/28 16:09:25 by mamedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	while (i < ft_strlen(s1))
 	{
-		result[i] = (s1)[i];
+		result[i] = s1[i];
 		i++;
 	}	
 	i = 0;
 	while (i < ft_strlen(s2))
 	{
-		result[ft_strlen(s1) + i] = (s2)[i];
+		result[ft_strlen(s1) + i] = s2[i];
 		i++;
 	}
 	result[len] = '\0';
