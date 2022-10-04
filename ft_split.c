@@ -6,86 +6,55 @@
 /*   By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 18:33:40 by mamedeir          #+#    #+#             */
-/*   Updated: 2022/09/30 18:57:49 by mamedeir         ###   ########.fr       */
+/*   Updated: 2022/10/04 16:17:22 by mamedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_size(char *s, char c)
+static size_t	ft_countword(char const *s, char c)
 {
-	int		times;
-	size_t	i;
+	size_t	count;
 
-	i = 0;
-	times = 0;
-	if (ft_strlen(s) == 0)
+	if (!*s)
 		return (0);
-	while (s[i] && s[i] == c)
-		i++;
-	while (s[i])
+	count = 0;
+	while (*s)
 	{
-		if (s[i] == c)
-		{
-			times++;
-			while (s[i] && s[i] == c)
-				i++;
-			continue ;
-		}
-		i++;
+		while (*s == c)
+			s++;
+		if (*s)
+			count++;
+		while (*s != c && *s)
+			s++;
 	}
-	if (s[i - 1] != c)
-		times++;
-	return (times);
-}
-
-static size_t	ft_len(char *s, char c, size_t start)
-{
-	size_t	len;
-	size_t	end;
-
-	len = 0;
-	end = 0;
-	if (ft_strchr(&s[start], c))
-	{
-		len = ft_strlen(ft_strchr(&s[start], c));
-	}
-	else
-	{
-		len = ft_strlen(&s[start]);
-	}
-	end = ft_strlen(s) - len - start;
-	if (!end)
-	{
-		end = ft_strlen(&s[start]);
-	}
-	return (end);
+	return (count);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	char	**tab;
-	size_t	start;
-	size_t	end;
-	size_t	index;
+	char	**lst;
+	size_t	word_len;
+	int		i;
 
-	tab = (char **)malloc((ft_size((char *)s, c) + 1) * sizeof(char *));
-	if (!tab)
-		return (NULL);
-	start = 0;
-	index = 0;
-	while (s[start])
+	lst = (char **)malloc((ft_countword(s, c) + 1) * sizeof(char *));
+	if (!s || !lst)
+		return (0);
+	i = 0;
+	while (*s)
 	{
-		if (s[start] != c)
+		while (*s == c && *s)
+			s++;
+		if (*s)
 		{
-			end = ft_len((char *)s, c, start);
-			tab[index] = ft_substr(s, start, end);
-			index++;
-			start += end;
+			if (!ft_strchr(s, c))
+				word_len = ft_strlen(s);
+			else
+				word_len = ft_strchr(s, c) - s;
+			lst[i++] = ft_substr(s, 0, word_len);
+			s += word_len;
 		}
-		else
-			start++;
 	}
-	tab[index] = NULL;
-	return (tab);
+	lst[i] = NULL;
+	return (lst);
 }
