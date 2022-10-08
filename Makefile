@@ -6,7 +6,7 @@
 #    By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/12 18:25:12 by mamedeir          #+#    #+#              #
-#    Updated: 2022/09/30 18:57:01 by mamedeir         ###   ########.fr        #
+#    Updated: 2022/10/08 02:08:27 by mamedeir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,10 @@ SRCS = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c f
 
 OBJS = ${SRCS:.c=.o}
 
+BONUS_SRCS = ft_lstadd_front.c ft_lstadd_back.c ft_lstdelone.c ft_lstlast.c ft_lstnew.c ft_lstsize.c
+
+BONUS_OBJS = ${BONUS_SRCS:.c=.o}
+
 CFLAGS = -Wall -Wextra -Werror
 
 all:	${NAME}
@@ -24,6 +28,12 @@ $(NAME): $(OBJS)
 
 $(OBJS): $(SRC)
 	cc $(CFLAGS) -c $(@:.o=.c)
+
+bonus:    $(NAME) $(BONUS_OBJS)
+    ar r $(NAME) $(BONUS_OBJS)
+
+$(BONUS_OBJS):
+    cc $(FLAGS) -c $(BONUS_SRCS)
 
 clean:
 	rm -f $(OBJS)
