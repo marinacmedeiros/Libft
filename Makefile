@@ -6,7 +6,7 @@
 #    By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/12 18:25:12 by mamedeir          #+#    #+#              #
-#    Updated: 2022/10/08 02:08:27 by mamedeir         ###   ########.fr        #
+#    Updated: 2022/10/08 02:21:24 by mamedeir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,14 +29,14 @@ $(NAME): $(OBJS)
 $(OBJS): $(SRC)
 	cc $(CFLAGS) -c $(@:.o=.c)
 
-bonus:    $(NAME) $(BONUS_OBJS)
-    ar r $(NAME) $(BONUS_OBJS)
+bonus: $(NAME) $(BONUS_OBJS)
+	ar r $(NAME) $(BONUS_OBJS)
 
 $(BONUS_OBJS):
-    cc $(FLAGS) -c $(BONUS_SRCS)
+	cc $(FLAGS) -c $(BONUS_SRCS)
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(BONUS_OBJS)
 
 fclean:	clean
 	rm -f $(NAME)

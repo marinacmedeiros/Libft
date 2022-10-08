@@ -6,7 +6,7 @@
 /*   By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 18:24:55 by mamedeir          #+#    #+#             */
-/*   Updated: 2022/10/08 01:46:34 by mamedeir         ###   ########.fr       */
+/*   Updated: 2022/10/08 02:18:39 by mamedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,12 @@
 
 # include <unistd.h>
 # include <stdlib.h> //AS DUAS ÚNICAS BIBLIOS QUE DEVEM SER ENTREGUES 
-# include <stdint.h> //calloc - RETIRAR
-# include <stdio.h> //printf - RETIRAR
-# include <string.h>// p/ testes de string - RETIRAR
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
