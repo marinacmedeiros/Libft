@@ -6,7 +6,7 @@
 /*   By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 18:24:55 by mamedeir          #+#    #+#             */
-/*   Updated: 2022/10/08 02:18:39 by mamedeir         ###   ########.fr       */
+/*   Updated: 2022/10/09 17:10:07 by mamedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define LIBFT_H
 
 # include <unistd.h>
-# include <stdlib.h> //AS DUAS ÚNICAS BIBLIOS QUE DEVEM SER ENTREGUES 
+# include <stdlib.h>
 
 typedef struct s_list
 {
