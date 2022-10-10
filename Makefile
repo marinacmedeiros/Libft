@@ -6,7 +6,7 @@
 #    By: mamedeir <mamedeir@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/12 18:25:12 by mamedeir          #+#    #+#              #
-#    Updated: 2022/10/08 02:21:24 by mamedeir         ###   ########.fr        #
+#    Updated: 2022/10/10 22:02:53 by mamedeir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SRCS = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c f
 
 OBJS = ${SRCS:.c=.o}
 
-BONUS_SRCS = ft_lstadd_front.c ft_lstadd_back.c ft_lstdelone.c ft_lstlast.c ft_lstnew.c ft_lstsize.c
+BONUS_SRCS = ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c ft_lstiter.c ft_lstlast.c ft_lstmap.c ft_lstnew.c ft_lstsize.c
 
 BONUS_OBJS = ${BONUS_SRCS:.c=.o}
 
